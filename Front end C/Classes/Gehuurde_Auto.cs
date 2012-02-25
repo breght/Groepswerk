@@ -39,6 +39,8 @@ namespace Front_end_C.Classes
                 al.Add(Van);
                 al.Add(Tot);
 
+                //Toevoegen bij tblAuto dat deze auto niet meer beschikbaar is !
+
                 if (ws.verhuur_add(al.ToArray()))
                 {
                     return true;
