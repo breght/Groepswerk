@@ -17,7 +17,12 @@ Public Class WebService
 
 #Region "Auto"
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie die gebruikt word om een auto te verhuren.
+    ''' Functie zelf staat gedefiëneerd in Database_Layer.
+    ''' </summary>
+    ''' <param name="gegevensArray"></param>
+    ''' <returns>string met resultaat van functie auto_verhuur()</returns>
     <WebMethod()> _
     Public Function auto_verhuur(ByVal gegevensArray As ArrayList) As String
         Try
@@ -107,7 +112,13 @@ Public Class WebService
 
 #Region "Klant"
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie die gebruikt word om klanten in te loggen.
+    ''' De functie zelf staat gedefiëneerd in de Database_layer.
+    ''' </summary>
+    ''' <param name="Emailadres"></param>
+    ''' <param name="Wachtwoord"></param>
+    ''' <returns>Dataset van de ingelogde klant</returns>
     <WebMethod()> _
     Public Function klant_Login(Emailadres As String, Wachtwoord As String) As DataSet
         Try
@@ -141,7 +152,12 @@ Public Class WebService
         End Try
     End Function
 
-    'Commentaar
+    ''' <summary>
+    ''' Deze functie word gebruikt om een nieuwe klant aan de database toe te voegen.
+    ''' De functie staat gedefiëneerd in Database_Layer.
+    ''' </summary>
+    ''' <param name="gegevensArray"></param>
+    ''' <returns>een string met het resultaat van de functie klant_insert()</returns>
     <WebMethod()> _
     Public Function klant_insert(ByVal gegevensArray As ArrayList) As String
         Try
@@ -212,7 +228,12 @@ Public Class WebService
 
 #Region "Verhuur"
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie die gebruikt word om een nieuwe verhuur aan de database toe te voegen.
+    ''' Deze functie staat gedefiëneerd in de Database_layer
+    ''' </summary>
+    ''' <param name="gegevensArray"></param>
+    ''' <returns>boolean</returns>
     <WebMethod()> _
     Public Function verhuur_add(gegevensArray As ArrayList) As Boolean
         Try
@@ -288,7 +309,14 @@ Public Class WebService
         Return dl.connectionTest()
     End Function
 
-    'Commentaar
+#Region "Admin"
+
+    ''' <summary>
+    ''' Functie die gebruikt word om administrator in te loggen.
+    ''' </summary>
+    ''' <param name="Emailadres"></param>
+    ''' <param name="Wachtwoord"></param>
+    ''' <returns>Boolean</returns>
     <WebMethod()> _
     Public Function admin_Login(Emailadres As String, Wachtwoord As String) As DataSet
         Try
@@ -298,10 +326,15 @@ Public Class WebService
         End Try
     End Function
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie die gebruikt word om de hele Admin tabel uit de database te halen en terug te geven in een dataset.
+    ''' </summary>
+    ''' <returns>Dataset van tblAdmins</returns>
     <WebMethod()> _
     Public Function admin_GetDataSetAdmin() As DataSet
         Return dl.Admin_getDataSetAdmin()
     End Function
+
+#End Region
 
 End Class

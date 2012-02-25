@@ -12,7 +12,11 @@ Public Class Database_Layer
 
 #Region "Auto"
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie om een auto te verhuren.
+    ''' </summary>
+    ''' <param name="gegevensArray"></param>
+    ''' <returns>0 of 1 (string)</returns>
     Public Function auto_verhuur(ByVal gegevensArray As ArrayList) As String
 
         Try
@@ -182,7 +186,12 @@ Public Class Database_Layer
 
 #Region "Klant"
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie die gebruikt word om een klant in te loggen.
+    ''' </summary>
+    ''' <param name="Emailadres"></param>
+    ''' <param name="Wachtwoord"></param>
+    ''' <returns>Dataset met de ingelogde klant</returns>
     Public Function klant_login(ByVal Emailadres As String, ByVal Wachtwoord As String) As DataSet
         Try
             Dim objCommand = New SqlCommand("loginKlant", objConnection)
@@ -273,7 +282,11 @@ Public Class Database_Layer
 
     End Function
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie om een klant toe te voegen aan de database.
+    ''' </summary>
+    ''' <param name="gegevensArray"></param>
+    ''' <returns>Klant succesvol toegevoegd / Fout </returns>
     Public Function klant_insert(ByVal gegevensArray As ArrayList) As String
 
         Try
@@ -293,7 +306,7 @@ Public Class Database_Layer
 
             objConnection.Open()
 
-            If objCommand.ExecuteNonQuery().ToString = "1" Then
+            If objCommand.ExecuteNonQuery() = 1 Then
                 Return "Klant succesvol toegevoegd."
             Else
                 Return "Fout tijdens het toevoegen van de klant."
@@ -541,7 +554,14 @@ Public Class Database_Layer
 
     End Function
 
-    'Commentaar
+#Region "Admin"
+
+    ''' <summary>
+    ''' Functie die gebruikt word om een Admin in te loggen.
+    ''' </summary>
+    ''' <param name="Emailadres"></param>
+    ''' <param name="Wachtwoord"></param>
+    ''' <returns>Dataset van de ingelogde admin</returns>
     Public Function Admin_Login(ByVal Emailadres As String, ByVal Wachtwoord As String) As DataSet
         Try
             Dim objCommand = New SqlCommand("loginAdmin", objConnection)
@@ -565,12 +585,18 @@ Public Class Database_Layer
         End Try
     End Function
 
-    'Commentaar
+    ''' <summary>
+    ''' Functie die gebruikt word om een dataset van alle admins te krijgen.
+    ''' </summary>
+    ''' <returns>Inhoud van tblAdmins als dataset</returns>
     Public Function Admin_getDataSetAdmin() As DataSet
         objDataAdapter.SelectCommand = New SqlCommand("SELECT * FROM tblAdmins", objConnection)
         objDataAdapter.Fill(objDataSet, "tblAdmins")
 
         Return objDataSet
     End Function
+
+#End Region
+
 
 End Class
