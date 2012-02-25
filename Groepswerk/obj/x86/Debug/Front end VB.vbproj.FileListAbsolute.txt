@@ -50,3 +50,7 @@ C:\Users\Robin\Desktop\groepswerk (breght)\groepswerk (breght)\Groepswerk(goed)\
 D:\users\3030134\Documents\School\2011-2012\Periode 2\VB.Net\Groepswerk\Groepswerk\obj\x86\Debug\Groepswerk.exe
 D:\users\3030134\Documents\School\2011-2012\Periode 2\VB.Net\Groepswerk\Groepswerk\obj\x86\Debug\Groepswerk.xml
 D:\users\3030134\Documents\School\2011-2012\Periode 2\VB.Net\Groepswerk\Groepswerk\obj\x86\Debug\Groepswerk.pdb
+D:\users\3030134\Groepswerk\Groepswerk\bin\Debug\Groepswerk.exe.config
+D:\users\3030134\Groepswerk\Groepswerk\obj\x86\Debug\Groepswerk.exe
+D:\users\3030134\Groepswerk\Groepswerk\obj\x86\Debug\Groepswerk.xml
+D:\users\3030134\Groepswerk\Groepswerk\obj\x86\Debug\Groepswerk.pdb
