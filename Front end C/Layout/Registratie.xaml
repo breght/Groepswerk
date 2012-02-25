@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Front_end_C.Layout.Registratie"
+        Title="Registratie" Height="484" Width="409" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" WindowStyle="None">
+	
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="Black"/>
+			<GradientStop Color="White" Offset="1"/>
+			<GradientStop Color="#FF0B568F" Offset="0.767"/>
+		</LinearGradientBrush>
+	</Window.Background>
+    <Grid>
+    	<TextBox x:Name="txtVoornaam" Height="24" Margin="179,94,16,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" DataContext="{Binding NotifyOnValidationError=True}" />
+    	<TextBox x:Name="txtAchternaam" Height="24" Margin="179,122,16,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+    	<TextBox x:Name="txtAdres" Height="24" Margin="179,150,16,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+    	<TextBox x:Name="txtPostcode" Margin="179,178,16,0" TextWrapping="Wrap" Text="" Height="24" VerticalAlignment="Top"/>
+    	<TextBox x:Name="txtEmailadres" Margin="179,206,16,0" TextWrapping="Wrap" Text="" Height="24" VerticalAlignment="Top"/>
+    	<TextBox x:Name="txtRijksregisternummer" Height="24" Margin="179,234,16,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+    	<Label Content="Adres" HorizontalAlignment="Left" Height="24" Margin="15,150,0,0" VerticalAlignment="Top" Width="145" Foreground="White"/>
+    	<Label Content="Postcode" HorizontalAlignment="Left" Height="24" Margin="15,178,0,0" VerticalAlignment="Top" Width="145" Foreground="White"/>
+    	<Label Content="Emailadres&#x9;" HorizontalAlignment="Left" Margin="15,206,0,0" Width="145" Foreground="White" Height="24" VerticalAlignment="Top"/>
+    	<Label Content="Rijksregisternummer" HorizontalAlignment="Left" Height="24" Margin="15,234,0,0" VerticalAlignment="Top" Width="145" Foreground="White"/>
+    	<Label Content="Voornaam" HorizontalAlignment="Left" Height="24" Margin="15,94,0,0" VerticalAlignment="Top" Width="145" Foreground="White"/>
+    	<Label Content="Achternaam" HorizontalAlignment="Left" Height="24" Margin="15,122,0,0" VerticalAlignment="Top" Width="145" Foreground="White"/>
+    	<TextBox x:Name="txtTelefoonnummer" Height="24" Margin="179,0,16,198" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom"/>
+    	<Label Content="Telefoonnummer" HorizontalAlignment="Left" Margin="15,0,0,198" Width="145" Height="24" VerticalAlignment="Bottom" Foreground="White"/>
+    	<TextBox x:Name="txtGSMnummer" Margin="179,0,16,170" TextWrapping="Wrap" Text="" Height="24" VerticalAlignment="Bottom"/>
+    	<Label Content="GSM-nummer" HorizontalAlignment="Left" Margin="15,0,0,170" Width="145" Foreground="White" Height="24" VerticalAlignment="Bottom"/>
+    	<Label Content="Geboortedatum" HorizontalAlignment="Left" Height="24" Margin="15,0,0,142" VerticalAlignment="Bottom" Width="145" Foreground="White"/>
+    	<DatePicker x:Name="dtpGeboortedatum" Height="24" Margin="179,0,16,142" VerticalAlignment="Bottom"/>
+    	<Label Content="Wachtwoord&#xa;Wachtwoord" HorizontalAlignment="Left" Height="24" Margin="15,0,0,114" VerticalAlignment="Bottom" Width="145" Foreground="White"/>
+    	<PasswordBox x:Name="txtWachtwoord" Height="24" Margin="179,0,16,114" VerticalAlignment="Bottom"/>
+    	<Button x:Name="btnSubmit" Content="Registreer" Height="29" Margin="15,0,0,25" VerticalAlignment="Bottom" Click="btnSubmit_Click" Background="#FF666666" Foreground="White" Style="{DynamicResource ButtonStyle1}" HorizontalAlignment="Left" Width="169" IsDefault="True" />
+    	<Button x:Name="btnClose" Content="Sluiten" Height="29" Margin="0,0,16,25" VerticalAlignment="Bottom" Background="#FF666666" Foreground="White" Style="{DynamicResource ButtonStyle1}" HorizontalAlignment="Right" Width="169" IsCancel="True" Click="btnClose_Click" />
+    	<Label Content="Registratie" Height="58" Margin="44,8,45,0" VerticalAlignment="Top" Foreground="White" FontSize="29.333" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>

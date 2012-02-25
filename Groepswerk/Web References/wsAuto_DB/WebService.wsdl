@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="auto_verhuur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="auto_verhuurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auto_verhuurResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_addResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auto_addResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auto_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_remove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="autoID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_removeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auto_removeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="auto_getDataSetAuto">
+        <s:complexType />
+      </s:element>
+      <s:element name="auto_getDataSetAutoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auto_getDataSetAutoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Emailadres" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Wachtwoord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="klant_LoginResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="klant_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="klant_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_remove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="klantID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_removeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="klant_removeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="klant_getDataSetKlant">
+        <s:complexType />
+      </s:element>
+      <s:element name="klant_getDataSetKlantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="klant_getDataSetKlantResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_addResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="verhuur_addResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gegevensArray" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verhuur_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_remove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="verhuurID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_removeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verhuur_removeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verhuur_getDataSetVerhuur">
+        <s:complexType />
+      </s:element>
+      <s:element name="verhuur_getDataSetVerhuurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verhuur_getDataSetVerhuurResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="connectionTest">
+        <s:complexType />
+      </s:element>
+      <s:element name="connectionTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="connectionTestResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admin_Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Emailadres" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Wachtwoord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admin_LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="admin_LoginResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admin_GetDataSetAdmin">
+        <s:complexType />
+      </s:element>
+      <s:element name="admin_GetDataSetAdminResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="admin_GetDataSetAdminResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="auto_verhuurSoapIn">
+    <wsdl:part name="parameters" element="tns:auto_verhuur" />
+  </wsdl:message>
+  <wsdl:message name="auto_verhuurSoapOut">
+    <wsdl:part name="parameters" element="tns:auto_verhuurResponse" />
+  </wsdl:message>
+  <wsdl:message name="auto_addSoapIn">
+    <wsdl:part name="parameters" element="tns:auto_add" />
+  </wsdl:message>
+  <wsdl:message name="auto_addSoapOut">
+    <wsdl:part name="parameters" element="tns:auto_addResponse" />
+  </wsdl:message>
+  <wsdl:message name="auto_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:auto_update" />
+  </wsdl:message>
+  <wsdl:message name="auto_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:auto_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="auto_removeSoapIn">
+    <wsdl:part name="parameters" element="tns:auto_remove" />
+  </wsdl:message>
+  <wsdl:message name="auto_removeSoapOut">
+    <wsdl:part name="parameters" element="tns:auto_removeResponse" />
+  </wsdl:message>
+  <wsdl:message name="auto_getDataSetAutoSoapIn">
+    <wsdl:part name="parameters" element="tns:auto_getDataSetAuto" />
+  </wsdl:message>
+  <wsdl:message name="auto_getDataSetAutoSoapOut">
+    <wsdl:part name="parameters" element="tns:auto_getDataSetAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="klant_LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:klant_Login" />
+  </wsdl:message>
+  <wsdl:message name="klant_LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:klant_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="klant_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:klant_insert" />
+  </wsdl:message>
+  <wsdl:message name="klant_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:klant_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="klant_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:klant_update" />
+  </wsdl:message>
+  <wsdl:message name="klant_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:klant_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="klant_removeSoapIn">
+    <wsdl:part name="parameters" element="tns:klant_remove" />
+  </wsdl:message>
+  <wsdl:message name="klant_removeSoapOut">
+    <wsdl:part name="parameters" element="tns:klant_removeResponse" />
+  </wsdl:message>
+  <wsdl:message name="klant_getDataSetKlantSoapIn">
+    <wsdl:part name="parameters" element="tns:klant_getDataSetKlant" />
+  </wsdl:message>
+  <wsdl:message name="klant_getDataSetKlantSoapOut">
+    <wsdl:part name="parameters" element="tns:klant_getDataSetKlantResponse" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_addSoapIn">
+    <wsdl:part name="parameters" element="tns:verhuur_add" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_addSoapOut">
+    <wsdl:part name="parameters" element="tns:verhuur_addResponse" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:verhuur_update" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:verhuur_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_removeSoapIn">
+    <wsdl:part name="parameters" element="tns:verhuur_remove" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_removeSoapOut">
+    <wsdl:part name="parameters" element="tns:verhuur_removeResponse" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_getDataSetVerhuurSoapIn">
+    <wsdl:part name="parameters" element="tns:verhuur_getDataSetVerhuur" />
+  </wsdl:message>
+  <wsdl:message name="verhuur_getDataSetVerhuurSoapOut">
+    <wsdl:part name="parameters" element="tns:verhuur_getDataSetVerhuurResponse" />
+  </wsdl:message>
+  <wsdl:message name="connectionTestSoapIn">
+    <wsdl:part name="parameters" element="tns:connectionTest" />
+  </wsdl:message>
+  <wsdl:message name="connectionTestSoapOut">
+    <wsdl:part name="parameters" element="tns:connectionTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="admin_LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:admin_Login" />
+  </wsdl:message>
+  <wsdl:message name="admin_LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:admin_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="admin_GetDataSetAdminSoapIn">
+    <wsdl:part name="parameters" element="tns:admin_GetDataSetAdmin" />
+  </wsdl:message>
+  <wsdl:message name="admin_GetDataSetAdminSoapOut">
+    <wsdl:part name="parameters" element="tns:admin_GetDataSetAdminResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="auto_verhuur">
+      <wsdl:input message="tns:auto_verhuurSoapIn" />
+      <wsdl:output message="tns:auto_verhuurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auto_add">
+      <wsdl:input message="tns:auto_addSoapIn" />
+      <wsdl:output message="tns:auto_addSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auto_update">
+      <wsdl:input message="tns:auto_updateSoapIn" />
+      <wsdl:output message="tns:auto_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auto_remove">
+      <wsdl:input message="tns:auto_removeSoapIn" />
+      <wsdl:output message="tns:auto_removeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="auto_getDataSetAuto">
+      <wsdl:input message="tns:auto_getDataSetAutoSoapIn" />
+      <wsdl:output message="tns:auto_getDataSetAutoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="klant_Login">
+      <wsdl:input message="tns:klant_LoginSoapIn" />
+      <wsdl:output message="tns:klant_LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="klant_insert">
+      <wsdl:input message="tns:klant_insertSoapIn" />
+      <wsdl:output message="tns:klant_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="klant_update">
+      <wsdl:input message="tns:klant_updateSoapIn" />
+      <wsdl:output message="tns:klant_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="klant_remove">
+      <wsdl:input message="tns:klant_removeSoapIn" />
+      <wsdl:output message="tns:klant_removeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="klant_getDataSetKlant">
+      <wsdl:input message="tns:klant_getDataSetKlantSoapIn" />
+      <wsdl:output message="tns:klant_getDataSetKlantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_add">
+      <wsdl:input message="tns:verhuur_addSoapIn" />
+      <wsdl:output message="tns:verhuur_addSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_update">
+      <wsdl:input message="tns:verhuur_updateSoapIn" />
+      <wsdl:output message="tns:verhuur_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_remove">
+      <wsdl:input message="tns:verhuur_removeSoapIn" />
+      <wsdl:output message="tns:verhuur_removeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_getDataSetVerhuur">
+      <wsdl:input message="tns:verhuur_getDataSetVerhuurSoapIn" />
+      <wsdl:output message="tns:verhuur_getDataSetVerhuurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="connectionTest">
+      <wsdl:input message="tns:connectionTestSoapIn" />
+      <wsdl:output message="tns:connectionTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="admin_Login">
+      <wsdl:input message="tns:admin_LoginSoapIn" />
+      <wsdl:output message="tns:admin_LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="admin_GetDataSetAdmin">
+      <wsdl:input message="tns:admin_GetDataSetAdminSoapIn" />
+      <wsdl:output message="tns:admin_GetDataSetAdminSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="auto_verhuur">
+      <soap:operation soapAction="http://tempuri.org/auto_verhuur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_add">
+      <soap:operation soapAction="http://tempuri.org/auto_add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_update">
+      <soap:operation soapAction="http://tempuri.org/auto_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_remove">
+      <soap:operation soapAction="http://tempuri.org/auto_remove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_getDataSetAuto">
+      <soap:operation soapAction="http://tempuri.org/auto_getDataSetAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_Login">
+      <soap:operation soapAction="http://tempuri.org/klant_Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_insert">
+      <soap:operation soapAction="http://tempuri.org/klant_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_update">
+      <soap:operation soapAction="http://tempuri.org/klant_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_remove">
+      <soap:operation soapAction="http://tempuri.org/klant_remove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_getDataSetKlant">
+      <soap:operation soapAction="http://tempuri.org/klant_getDataSetKlant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_add">
+      <soap:operation soapAction="http://tempuri.org/verhuur_add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_update">
+      <soap:operation soapAction="http://tempuri.org/verhuur_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_remove">
+      <soap:operation soapAction="http://tempuri.org/verhuur_remove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_getDataSetVerhuur">
+      <soap:operation soapAction="http://tempuri.org/verhuur_getDataSetVerhuur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectionTest">
+      <soap:operation soapAction="http://tempuri.org/connectionTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admin_Login">
+      <soap:operation soapAction="http://tempuri.org/admin_Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admin_GetDataSetAdmin">
+      <soap:operation soapAction="http://tempuri.org/admin_GetDataSetAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="auto_verhuur">
+      <soap12:operation soapAction="http://tempuri.org/auto_verhuur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_add">
+      <soap12:operation soapAction="http://tempuri.org/auto_add" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_update">
+      <soap12:operation soapAction="http://tempuri.org/auto_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_remove">
+      <soap12:operation soapAction="http://tempuri.org/auto_remove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="auto_getDataSetAuto">
+      <soap12:operation soapAction="http://tempuri.org/auto_getDataSetAuto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_Login">
+      <soap12:operation soapAction="http://tempuri.org/klant_Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_insert">
+      <soap12:operation soapAction="http://tempuri.org/klant_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_update">
+      <soap12:operation soapAction="http://tempuri.org/klant_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_remove">
+      <soap12:operation soapAction="http://tempuri.org/klant_remove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="klant_getDataSetKlant">
+      <soap12:operation soapAction="http://tempuri.org/klant_getDataSetKlant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_add">
+      <soap12:operation soapAction="http://tempuri.org/verhuur_add" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_update">
+      <soap12:operation soapAction="http://tempuri.org/verhuur_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_remove">
+      <soap12:operation soapAction="http://tempuri.org/verhuur_remove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verhuur_getDataSetVerhuur">
+      <soap12:operation soapAction="http://tempuri.org/verhuur_getDataSetVerhuur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectionTest">
+      <soap12:operation soapAction="http://tempuri.org/connectionTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admin_Login">
+      <soap12:operation soapAction="http://tempuri.org/admin_Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admin_GetDataSetAdmin">
+      <soap12:operation soapAction="http://tempuri.org/admin_GetDataSetAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:61414/WebService/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:61414/WebService/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

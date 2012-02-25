@@ -1,0 +1,42 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="Front_end_C.Account"
+	x:Name="Window"
+	Title="Account"
+	Width="448" Height="480" WindowStyle="None" Loaded="Window_Loaded" ResizeMode="CanMinimize" WindowStartupLocation="Manual">
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="Black"/>
+			<GradientStop Color="White" Offset="1"/>
+			<GradientStop Color="#FF0B568F" Offset="0.767"/>
+		</LinearGradientBrush>
+	</Window.Background>
+	<Grid x:Name="LayoutRoot">
+		<Label Content="Achternaam" HorizontalAlignment="Left" Height="27" Margin="20,92,0,0" VerticalAlignment="Top" Width="118" Foreground="White"/>
+		<Label Content="Rijksregisternummer" HorizontalAlignment="Left" Height="27" Margin="20,185,0,0" VerticalAlignment="Top" Width="118" Foreground="White"/>
+		<Label Content="Telefoonummer" HorizontalAlignment="Left" Margin="20,216,0,237" Width="118" Foreground="White" Height="27"/>
+		<Label Content="GSM nummer" HorizontalAlignment="Left" Height="27" Margin="20,0,0,210" VerticalAlignment="Bottom" Width="118" Foreground="White"/>
+		<Label Content="Geboortedatum" HorizontalAlignment="Left" Margin="20,0,0,181" Width="118" Foreground="White" Height="27" VerticalAlignment="Bottom"/>
+		<Label Content="Emailadres" HorizontalAlignment="Left" Height="27" Margin="20,0,0,150" VerticalAlignment="Bottom" Width="118" Foreground="White"/>
+		<Label Content="Wachtwoord" HorizontalAlignment="Left" Height="27" Margin="20,0,0,119" VerticalAlignment="Bottom" Width="118" Foreground="White"/>
+		<Label Content="Voornaam" HorizontalAlignment="Left" Height="27" Margin="20,61,0,0" VerticalAlignment="Top" Width="118" Foreground="White"/>
+		<Label Content="Adres" HorizontalAlignment="Left" Height="27" Margin="20,123,0,0" VerticalAlignment="Top" Width="118" Foreground="White"/>
+		<Label Content="Postcode" HorizontalAlignment="Left" Height="27" Margin="20,154,0,0" VerticalAlignment="Top" Width="118" Foreground="White"/>
+		<TextBox x:Name="txtVoornaam" Height="25" Margin="196,63,19,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBox x:Name="txtAchternaam" Height="25" Margin="196,94,19,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBox x:Name="txtAdres" Height="25" Margin="196,125,19,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBox x:Name="txtPostcode" Height="25" Margin="196,156,19,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<TextBox x:Name="txtRijksregisternummer" Margin="196,187,19,0" TextWrapping="Wrap" Height="25" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+		<TextBox x:Name="txtTelefoonnummer" Margin="196,216,19,239" TextWrapping="Wrap" Height="25"/>
+		<TextBox x:Name="txtGSM" Height="25" Margin="196,0,19,210" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+		<TextBox x:Name="txtEmailadres" Height="25" Margin="196,0,19,152" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+		<PasswordBox x:Name="txtWachtwoord" Height="25" Margin="196,0,19,123" VerticalAlignment="Bottom"/>
+		<DatePicker x:Name="dtpGeboortedatum" Height="25" Margin="196,0,19,181" VerticalAlignment="Bottom" IsTodayHighlighted="False"/>
+		<Button x:Name="btnOpslaan" Content="Opslaan" HorizontalAlignment="Left" Height="26" Margin="20,0,0,36" VerticalAlignment="Bottom" Width="103" Background="#FF666666" Foreground="White" ToolTip="Wilt u deze wijzigen opslaan ?" Style="{DynamicResource ButtonStyle1}" Click="btnOpslaan_Click" IsDefault="True" />
+		<Button x:Name="btnDelete" Content="Verwijderen" HorizontalAlignment="Right" Height="26" Margin="0,0,19,36" VerticalAlignment="Bottom" Width="103" Background="#FF666666" Foreground="White" ToolTip="Account verwijderen ?" Style="{DynamicResource ButtonStyle1}" Click="btnDelete_Click" />
+		<Button x:Name="btnVerwerpen" Content="Verwerpen" Height="26" Margin="165,0,164,36" VerticalAlignment="Bottom" Background="#FF666666" Foreground="White" ToolTip="Wilt u deze wijzigen verwerpen ?" Style="{DynamicResource ButtonStyle1}" Click="btnVerwerpen_Click" IsCancel="True" />
+		<Label Content="Mijn account" Height="37" Margin="77,8,63,0" VerticalAlignment="Top" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="21.333"/>
+	</Grid>
+</Window>

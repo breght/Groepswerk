@@ -1,0 +1,549 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Groepswerk
+</name>
+</assembly>
+<members>
+<member name="M:Groepswerk.wsAuto_DB.WebService.#ctor">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.auto_verhuurCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.auto_addCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.auto_updateCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.auto_removeCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.auto_getDataSetAutoCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.klant_LoginCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.klant_insertCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.klant_updateCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.klant_removeCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.klant_getDataSetKlantCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.verhuur_addCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.verhuur_updateCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.verhuur_removeCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.verhuur_getDataSetVerhuurCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.connectionTestCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.admin_LoginCompleted">
+	<remarks/>
+</member><member name="E:Groepswerk.wsAuto_DB.WebService.admin_GetDataSetAdminCompleted">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_verhuur(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_verhuurAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_verhuurAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_add(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_addAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_addAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_update(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_updateAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_updateAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_remove(System.Int32)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_removeAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_removeAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_getDataSetAuto">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_getDataSetAutoAsync">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.auto_getDataSetAutoAsync(System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_Login(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_LoginAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_LoginAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_insert(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_insertAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_insertAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_update(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_updateAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_updateAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_remove(System.Int32)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_removeAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_removeAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_getDataSetKlant">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_getDataSetKlantAsync">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.klant_getDataSetKlantAsync(System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_add(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_addAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_addAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_update(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_updateAsync(System.Object[])">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_updateAsync(System.Object[],System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_remove(System.Int32)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_removeAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_removeAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_getDataSetVerhuur">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_getDataSetVerhuurAsync">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.verhuur_getDataSetVerhuurAsync(System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.connectionTest">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.connectionTestAsync">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.connectionTestAsync(System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.admin_Login(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.admin_LoginAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.admin_LoginAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.admin_GetDataSetAdmin">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.admin_GetDataSetAdminAsync">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.admin_GetDataSetAdminAsync(System.Object)">
+	<remarks/>
+</member><member name="M:Groepswerk.wsAuto_DB.WebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.WebService">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_verhuurCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.auto_verhuurCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_verhuurCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_addCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.auto_addCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_addCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_updateCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.auto_updateCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_updateCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_removeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.auto_removeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_removeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_getDataSetAutoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.auto_getDataSetAutoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.auto_getDataSetAutoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_LoginCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.klant_LoginCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_LoginCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_insertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.klant_insertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_insertCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_updateCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.klant_updateCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_updateCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_removeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.klant_removeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_removeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_getDataSetKlantCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.klant_getDataSetKlantCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.klant_getDataSetKlantCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_addCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.verhuur_addCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_addCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_updateCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.verhuur_updateCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_updateCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_removeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.verhuur_removeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_removeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_getDataSetVerhuurCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.verhuur_getDataSetVerhuurCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.verhuur_getDataSetVerhuurCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.connectionTestCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.connectionTestCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.connectionTestCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.admin_LoginCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.admin_LoginCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.admin_LoginCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.admin_GetDataSetAdminCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Groepswerk.wsAuto_DB.admin_GetDataSetAdminCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Groepswerk.wsAuto_DB.admin_GetDataSetAdminCompletedEventArgs">
+	<remarks/>
+</member><member name="M:Groepswerk.Methods.isString(System.String)">
+	<summary>
+ Nagaan of de ingegeven waarde een geldige string is.
+ </summary>
+	<param name="something">Een waarde van het type string</param>
+	<returns>Een True value als de waarde geldig is, anders een False value.</returns>
+</member><member name="M:Groepswerk.Methods.isNumber(System.String)">
+	<summary>
+ Nagaan of de ingegeven waarde een geldig nummer is.
+ </summary>
+	<param name="something">Een waarde van het type string</param>
+	<returns>Een True value als de waarde geldig is, anders een False value.</returns>
+</member><member name="M:Groepswerk.Methods.isPostcode(System.String)">
+	<summary>
+ Nagaan of de ingegeven waarde een geldige postcode is.
+ </summary>
+	<param name="something">Een waarde van het type string</param>
+	<returns>Een True value als de waarde geldig is, anders een False value.</returns>
+</member><member name="M:Groepswerk.Methods.askPermission(System.String)">
+	<summary>
+ Toont een YES/NO messagebox met als inhoud de ingegeven waarden. De keuze wordt doorgegeven als een True/False waarden.
+ </summary>
+	<param name="text">Een waarde van het type string</param>
+	<returns>Het resultaat van de messagebox als een True/False waarde.</returns>
+</member><member name="M:Groepswerk.Form1.pnlAuto_VisibleChanged(System.Object,System.EventArgs)">
+	<summary>
+ De dataset en datatable wordt gevuld met gegevens van alle auto's.
+ Alle velden worden ingevuld met gegevens van de eerste rij in de tabel.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnAutoFirst_Click(System.Object,System.EventArgs)">
+	<summary>
+ De eerste positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnAutoPrevious_Click(System.Object,System.EventArgs)">
+	<summary>
+ De vorige positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnAutoNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ De volgende positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnAutoLast_Click(System.Object,System.EventArgs)">
+	<summary>
+ De laatse positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnAutoToevoegen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Toevoegen van een auto.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+</member><member name="M:Groepswerk.Form1.btnAutoAanpassen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Aanpassen van een auto.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+</member><member name="M:Groepswerk.Form1.btnAutoVerwijderen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Verwijderen van een auto.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+	<exception cref="T:System.IndexOutOfRangeException">Een Index Out Of Range Exception wordt opgevangen wanneer de positie naar een onbestaand record verwijst.</exception>
+</member><member name="M:Groepswerk.Form1.auto_fillFields">
+	<summary>
+ Het vullen van de velden op het formulier.
+ </summary>
+	<exception cref="T:System.IndexOutOfRangeException">Een Index Out Of Range Exception wordt opgevangen wanneer de positie naar een onbestaand record verwijst.</exception>
+	<exception cref="T:System.NullReferenceException">Een Null Reference Exception wordt opgevangen wanneer er uit iets onbestaand data wordt uitgehaald.</exception>
+</member><member name="M:Groepswerk.Form1.clearDataAuto">
+	<summary>
+ Alle velden leegmaken.
+ </summary>
+</member><member name="M:Groepswerk.Form1.pnlKlant_VisibleChanged(System.Object,System.EventArgs)">
+	<summary>
+ De dataset en datatable wordt gevuld met gegevens van alle klanten.
+ Alle velden worden ingevuld met gegevens van de eerste rij in de tabel.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnKlantFirst_Click(System.Object,System.EventArgs)">
+	<summary>
+ De eerste positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnKlantPrevious_Click(System.Object,System.EventArgs)">
+	<summary>
+ De vorige positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnKlantNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ De volgende positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnKlantLast_Click(System.Object,System.EventArgs)">
+	<summary>
+ De laatse positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnKlantAanpassen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Aanpassen van een klant.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+</member><member name="M:Groepswerk.Form1.btnKlantVerwijderen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Verwijderen van een klant.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+	<exception cref="T:System.IndexOutOfRangeException">Een Index Out Of Range Exception wordt opgevangen wanneer de positie naar een onbestaand record verwijst.</exception>
+</member><member name="M:Groepswerk.Form1.klant_fillFields">
+	<summary>
+ Het vullen van de velden op het formulier.
+ </summary>
+	<exception cref="T:System.IndexOutOfRangeException">Een Index Out Of Range Exception wordt opgevangen wanneer de positie naar een onbestaand record verwijst.</exception>
+	<exception cref="T:System.NullReferenceException">Een Null Reference Exception wordt opgevangen wanneer er uit iets onbestaand data wordt uitgehaald.</exception>
+</member><member name="M:Groepswerk.Form1.clearDataKlant">
+	<summary>
+ Alle velden leegmaken.
+ </summary>
+</member><member name="M:Groepswerk.Form1.pnlVerhuurdeAuto_VisibleChanged(System.Object,System.EventArgs)">
+	<summary>
+ De dataset en datatable wordt gevuld met gegevens van alle verhuren.
+ Alle velden worden ingevuld met gegevens van de eerste rij in de tabel.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnVerhuurFirst_Click(System.Object,System.EventArgs)">
+	<summary>
+ De eerste positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnVerhuurPrevious_Click(System.Object,System.EventArgs)">
+	<summary>
+ De vorige positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnVerhuurNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ De volgende positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnVerhuurLast_Click(System.Object,System.EventArgs)">
+	<summary>
+ De laatse positie wordt geselecteerd.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnVerhuurAanpassen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Aanpassen van een verhuur.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+</member><member name="M:Groepswerk.Form1.txtVerhuurVerwijderen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Verwijderen van een verhuur.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<exception cref="T:System.Web.Services.Protocols.SoapException">Een Soap Exception wordt opgevangen wanneer de communicatie met de webservice misgaat.</exception>
+	<exception cref="T:System.IndexOutOfRangeException">Een Index Out Of Range Exception wordt opgevangen wanneer de positie naar een onbestaand record verwijst.</exception>
+</member><member name="M:Groepswerk.Form1.verhuur_fillFields">
+	<summary>
+ Het vullen van de velden op het formulier.
+ </summary>
+	<exception cref="T:System.IndexOutOfRangeException">Een Index Out Of Range Exception wordt opgevangen wanneer de positie naar een onbestaand record verwijst.</exception>
+	<exception cref="T:System.NullReferenceException">Een Null Reference Exception wordt opgevangen wanneer er uit iets onbestaand data wordt uitgehaald.</exception>
+</member><member name="M:Groepswerk.Form1.clearDataVerhuur">
+	<summary>
+ Alle velden leegmaken.
+ </summary>
+</member><member name="M:Groepswerk.Form1.miAuto_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het Auto panel wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.miKlant_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het Klant panel wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.miVerhuurdeWagen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het VerhuurdeWagen panel wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.miAutoTonen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het AutoTonen panel wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.miKlantenTonen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het KlantenTonen panel wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.miVerhuurdeAutosTonen_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het VerhuurdeAutosTonen panel wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.StartToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het Startscherm wordt zichtbaar gemaakt.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.TestConnectieToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ De verbinding met de database wordt getest.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.AfsluitenToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Het programma wordt afgesloten.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.datatableVullen(System.String)">
+	<summary>
+ Afhankelijk van de tabel naam wordt de combobox gevuld met de kolomnamen en de datagrid gevuld met de rijen.
+ </summary>
+	<param name="table"></param>
+</member><member name="M:Groepswerk.Form1.cbTabel_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Wanneer een andere tabel wordt geselecteerd vernieuwd de combobox met de kolomnamen en de datagrid.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.btnFilter_Click(System.Object,System.EventArgs)">
+	<summary>
+ De filter wordt toegepast op de geselecteerde kolom met de waarde in de textbox.
+ De datagrid wordt opnieuw gevuld, rekening houdend met de filter.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.Form1_Load(System.Object,System.EventArgs)">
+	<summary>
+ Algemene instellingen worden geladen bij de Form_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:Groepswerk.Form1.connectionTest">
+	<summary>
+ Testen van de verbinding met de database.
+ </summary>
+</member><member name="P:Groepswerk.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Groepswerk.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Groepswerk.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
