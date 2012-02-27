@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.SqlClient
 Imports System.Web.Services.Protocols
-
+'loooooooool
 Public Class Form1
 
     Dim client As New wsAuto_DB.WebService
