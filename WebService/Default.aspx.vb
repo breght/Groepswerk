@@ -4,4 +4,6 @@ Partial Class _Default
 
     'test
 
+    'test 2
+
 End Class
