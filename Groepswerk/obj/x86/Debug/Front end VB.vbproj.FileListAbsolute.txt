@@ -66,3 +66,7 @@ C:\Users\Robin\Desktop\test\Groepswerk\bin\Debug\Groepswerk.exe.config
 C:\Users\Robin\Desktop\test\Groepswerk\obj\x86\Debug\Groepswerk.exe
 C:\Users\Robin\Desktop\test\Groepswerk\obj\x86\Debug\Groepswerk.xml
 C:\Users\Robin\Desktop\test\Groepswerk\obj\x86\Debug\Groepswerk.pdb
+C:\Users\Breght\Desktop\testje\Groepswerk\bin\Debug\Groepswerk.exe.config
+C:\Users\Breght\Desktop\testje\Groepswerk\obj\x86\Debug\Groepswerk.exe
+C:\Users\Breght\Desktop\testje\Groepswerk\obj\x86\Debug\Groepswerk.xml
+C:\Users\Breght\Desktop\testje\Groepswerk\obj\x86\Debug\Groepswerk.pdb

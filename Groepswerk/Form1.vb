@@ -2,6 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.Web.Services.Protocols
 'loooooooool
+'test
 Public Class Form1
 
     Dim client As New wsAuto_DB.WebService
