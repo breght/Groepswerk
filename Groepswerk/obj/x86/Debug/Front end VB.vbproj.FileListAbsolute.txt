@@ -58,3 +58,7 @@ C:\Users\Breght\Desktop\lol\Groepswerk\bin\Debug\Groepswerk.exe.config
 C:\Users\Breght\Desktop\lol\Groepswerk\obj\x86\Debug\Groepswerk.exe
 C:\Users\Breght\Desktop\lol\Groepswerk\obj\x86\Debug\Groepswerk.xml
 C:\Users\Breght\Desktop\lol\Groepswerk\obj\x86\Debug\Groepswerk.pdb
+C:\Users\Breght\Desktop\test\Groepswerk\bin\Debug\Groepswerk.exe.config
+C:\Users\Breght\Desktop\test\Groepswerk\obj\x86\Debug\Groepswerk.exe
+C:\Users\Breght\Desktop\test\Groepswerk\obj\x86\Debug\Groepswerk.xml
+C:\Users\Breght\Desktop\test\Groepswerk\obj\x86\Debug\Groepswerk.pdb
