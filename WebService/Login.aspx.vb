@@ -1,7 +1,7 @@
 ﻿
 Partial Class Login
     Inherits System.Web.UI.Page
-
+    'test
     Protected Sub btnInloggen_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnInloggen.Click
 
         Dim client As New WebService
